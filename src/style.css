@@ -1,0 +1,122 @@
+/* src/styles.css */
+
+
+.error-text {
+    color: #ff6b6b; /* Bright red for error messages */
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background for the body  */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+h2{
+    background-color:rgb(197, 197, 197);
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-size: cover;
+    margin-left: 250px;
+    width: 300px;
+    background-position: center;
+    text-align: center;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 900px;
+    /* padding: 4px; */
+    background: linear-gradient(to bottom right, #0077b6, #00b4d8); /* Gradient applied to the container  */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    color: #fff; /* Ensures text inside is readable on the gradient */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background: #fff; /* White background inside the form  */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label {
+    color: #333;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"] {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    width: 100%;
+    margin-top: 5px;
+    box-sizing: border-box;
+    background-color: #f4f4f9; /* Light grey for input fields  */
+    transition: border 0.2s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus {
+    border-color: #00b4d8;
+    outline: none;
+}
+
+/*  Adding margin between the last input field and the buttons  */
+.form-navigation {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px; /* Space between buttons  */
+}
+
+ /* Styling the buttons  */
+button {
+    padding: 12px 25px;
+    background-color: #015a8a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow  */
+}
+
+.button-group{
+    margin-top: 25px;
+}
+
+button:hover {
+    background-color: #00b4d8;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deepen shadow on hover  */
+}
+
+ /* Full width buttons for small screens *] */
+@media (max-width: 768px) {
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .form-navigation {
+        flex-direction: column;
+    }
+} 
